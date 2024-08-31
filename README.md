@@ -9,6 +9,7 @@ The course will work best if we follow it through together so if you can curb yo
 Base images can be found here: [https://hub.docker.com/](https://hub.docker.com/)
 Docker build documentation: [https://docs.docker.com/reference/cli/docker/build-legacy/](https://docs.docker.com/reference/cli/docker/build-legacy/)
 Docker run documentation: [https://docs.docker.com/reference/cli/docker/container/run/](https://docs.docker.com/reference/cli/docker/container/run/)
+Docker file syntax reference: [https://docs.docker.com/reference/dockerfile/](https://docs.docker.com/reference/dockerfile/) 
 
 Building an image
 For a basic build, adapt this command to match the exercise

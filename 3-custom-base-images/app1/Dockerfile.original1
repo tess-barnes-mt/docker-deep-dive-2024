@@ -19,7 +19,7 @@ ENV GEM_HOME="/usr/local/bundle"
 ENV PATH $GEM_HOME/bin:$GEM_HOME/gems/bin:$PATH
 
 # selectively copy the tests to the image's working directory
-COPY tests/ /tests/
+COPY functional-tests/ /tests/
 COPY Rakefile /tests/
 COPY entrypoint.sh /usr/local/bin/
 

@@ -12,7 +12,7 @@ There are many different flavours of linux os and combinations of primary langue
 
 Fully featured < — > skinny
 
-# Exercise:
+## Exercise:
 build the original dockerfile and note the size of the image it creates
 
 ```shell
