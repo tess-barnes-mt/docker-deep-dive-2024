@@ -11,7 +11,7 @@ Extra files can end up in the baked image which can:
 Docker ignore files
 
 ## Detail
-With lots of files to copy you don't want to list them separately, it's longwinded and brittle with changes
+With lots of files to copy you don't want to list them separately, it's longwinded and brittle with changes.
 The dockerfile copy instruction will use a `.dockerignore` file to skip copying files or folders we don't want, much like a .gitignore file
 
 ## Exercise

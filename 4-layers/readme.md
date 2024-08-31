@@ -3,7 +3,7 @@
 ## Problem
 Rebuilding the image takes a long time
 
-## Priniple
+## Principle
 Layers
 
 ## Detail

@@ -6,8 +6,8 @@ However, we don't want the credentials stored in version control.
 We also don't want our credentials visible in the layers manifest or build logs for the deployment image.
 
 ## Principle(s)
-Multi-stage builds
-Build variables
+- Multi-stage builds
+- Build variables
 
 ## Detail
 We can use build variables to inject values at run time and set environment variables for use deeper in.
@@ -28,8 +28,10 @@ Remember to record your results at each stage!
 
 ## References
 https://docs.docker.com/build/guide/build-args/
-https://docs.docker.com/build/building/variables/
-https://docs.docker.com/reference/cli/docker/image/history/
-https://docs.docker.com/build/building/multi-stage/
 
+https://docs.docker.com/build/building/variables/
+
+https://docs.docker.com/reference/cli/docker/image/history/
+
+https://docs.docker.com/build/building/multi-stage/
 
