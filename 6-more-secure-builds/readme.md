@@ -21,8 +21,8 @@ We can also create stages in our dockerfiles. Earlier stages and their layers ar
 - Run it to check it works `docker run --rm docker-deep-divd/ex6/better`
 - Check the layers of the baked image by running `docker history docker-deep-divd/ex6/better`
 - Create a multistage version to make sure the build arguments and tokens are not baked into the final image `docker build -t docker-deep-divd/ex6/multistage -f Dockerfile.multistage --progress=plain --build-arg TOKEN=your-pat-token .`
-- Check the layers of the multistage baked image by running `docker history docker-deep-divd/ex6/better`
-- Run it to check it works `docker run --rm docker-deep-divd/ex6/better`
+- Check the layers of the multistage baked image by running `docker history docker-deep-divd/ex6/multistage`
+- Run it to check it works `docker run --rm docker-deep-divd/ex6/multistage`
   
 Remember to record your results at each stage!
 
