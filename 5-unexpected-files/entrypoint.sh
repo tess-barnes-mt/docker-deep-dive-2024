@@ -1,3 +1,3 @@
 #!/bin/sh
 
-tree /my-app
+tree -a /my-app
