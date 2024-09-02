@@ -8,7 +8,7 @@ Using the right base image
 
 ## Detail 
 The trick is build in ONLY what you need. Most docker images are based on a linux distribution.
-There are many different flavours of linux os and combinations of primary langue the image is tailored for.
+There are many different flavours of linux os and combinations of primary language the image is tailored for.
 
 Fully featured < — > skinny
 

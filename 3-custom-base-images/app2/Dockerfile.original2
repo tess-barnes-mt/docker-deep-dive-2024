@@ -1,10 +1,9 @@
 FROM ruby:alpine
 
 RUN apk update
-RUN apk add --nocache alpine-sdk libmagic \
+RUN apk add --no-cache alpine-sdk libmagic \
     nodejs npm postgresql-dev
 RUN apk add chromium
-RUN apk add chromium-driver
 RUN apk add aws-cli
 RUN apk add jq
 RUN rm /var/cache/apk/*
@@ -13,7 +12,7 @@ RUN apk -U upgrade
 
 RUN npm i -g npm@9
 
-RUN npm install - serverless@3
+RUN npm install -g serverless@3
 
 ENV GEM_HOME="/usr/local/bundle"
 ENV PATH $GEM_HOME/bin:$GEM_HOME/gems/bin:$PATH
