@@ -15,7 +15,7 @@ With lots of files to copy you don't want to list them separately, it's longwind
 The dockerfile copy instruction will use a `.dockerignore` file to skip copying files or folders we don't want, much like a .gitignore file
 
 ## Exercise
-- Build the image using the Dockerfile.original file
+- Build the image using the `Dockerfile` file
 - Run the image and record the ouput in your results
 - Add a .dockerignore file with a listing of the files you think should be skipped
 - Build the image again

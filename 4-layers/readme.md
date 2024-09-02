@@ -24,6 +24,8 @@ The number of instructions also matters, more instructions = more layers = bigge
 - Create a better version of the docker file that considers which order layers should be in
 - Build that and record the number of layers
 - Build it again, record the number of layers pulled from cache
+- Change the version of small to an earlier version
+- Build your better dockerfile, record how many layers are now pulled from cache
 
 ### Stretch
 - Adapt your dockerfile.better to have fewer layers (hint, look at how files are copied)
