@@ -17,15 +17,15 @@ We can also create stages in our dockerfiles. Earlier stages and their layers ar
 ## Exercise
 ### Part 1 - use the credential
 - Ensure you have a credential you can use to download the private dependencies (a classic Personal Access Token)
-- Attempt to build the image using the original file. PS This is expected to fail. `docker build -t docker-deep-divd/ex6/original -f Dockerfile.original --progress=plain .`
-- Create a better dockerfile that uses build arguments and environment variables to get the build to work `docker build -t docker-deep-divd/ex6/better -f Dockerfile.better --progress=plain --build-arg TOKEN=your-pat-token .`
-- Run it to check it works `docker run --rm docker-deep-divd/ex6/better`
-- Check the layers of the baked image by running `docker history docker-deep-divd/ex6/better`
+- Attempt to build the image using the original file. PS This is expected to fail. `docker build -t docker-deep-dive/ex6/original -f Dockerfile.original --progress=plain .`
+- Create a better dockerfile that uses build arguments and environment variables to get the build to work `docker build -t docker-deep-dive/ex6/better -f Dockerfile.better --progress=plain --build-arg TOKEN=your-pat-token .`
+- Run it to check it works `docker run --rm docker-deep-dive/ex6/better`
+- Check the layers of the baked image by running `docker history docker-deep-dive/ex6/better`
 
 ### Part 2 - hide the credential
-- Create a multistage version to make sure the build arguments and tokens are not baked into the final image `docker build -t docker-deep-divd/ex6/multistage -f Dockerfile.multistage --progress=plain --build-arg TOKEN=your-pat-token .`
-- Check the layers of the multistage baked image by running `docker history docker-deep-divd/ex6/multistage`
-- Run it to check it works `docker run --rm docker-deep-divd/ex6/multistage`
+- Create a multistage version to make sure the build arguments and tokens are not baked into the final image `docker build -t docker-deep-dive/ex6/multistage -f Dockerfile.multistage --progress=plain --build-arg TOKEN=your-pat-token .`
+- Check the layers of the multistage baked image by running `docker history docker-deep-dive/ex6/multistage`
+- Run it to check it works `docker run --rm docker-deep-dive/ex6/multistage`
   
 Remember to record your results at each stage!
 
